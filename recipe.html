@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Recipe</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body class="recipe-body">
+    <header class="recipe-header">
+        <h1> Please share your favorite recipe below:</h1>
+    </header>
+    <main class="recipe-main">
+        <form name="contact" method="POST" data-netlify="true">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required />
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required />
+            </div>
+            <div>
+                <label for="phone">Phone number:</label>
+                <input type="tel" name="phone" id="phone" />
+            </div>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" min="1" max="200" step="1" />
+            </div>
+            <div>
+                <label for="date">Date of birth:</label>
+                <input type="date" name="date" id="date" min="1900-01-01" />
+            </div>
+            <hr />
+
+            <div>
+                Gender:
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male" />
+                </div>
+                <div>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female" />
+                </div>
+                <div>
+                    <label for="other">Other</label>
+                    <input type="radio" name="gender" id="other" value="other" />
+                </div>
+            </div>
+            <hr />
+
+            <div>
+                Favorite Cuisine:
+                <div>
+                    <label for="italian">Italian</label>
+                    <input type="checkbox" name="italian" id="italian" />
+                </div>
+                <div>
+                    <label for="french">French</label>
+                    <input type="checkbox" name="french" id="french" />
+                </div>
+                <div>
+                    <label for="spanish">Spanish</label>
+                    <input type="checkbox" name="spanish" id="spanish" />
+                </div>
+                <div>
+                    <label for="arabic">Arabic</label>
+                    <input type="checkbox" name="arabic" id="arabic" />
+                </div>
+            </div>
+            <hr />
+
+            <div>
+                <label for="color">Favorite apron color:</label>
+                <input type="color" name="color" id="color" />
+            </div>
+            <hr />
+
+            <div>
+                <label for="bio">Biography:</label>
+                <textarea id="bio" name="bio"></textarea>
+            </div>
+            <div>
+                <label for="file">Upload your latest recipe here:</label>
+                <input id="file" type="file" name="file" />
+            </div>
+
+            <div>
+                <label for="url">URL to recipe website:</label>
+                <input type="url" name="url" id="url" />
+            </div>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
